@@ -2228,8 +2228,8 @@ a {
   }
 
   .site-footer {
-    margin: 0 auto 24px;
-    width: min(100% - 32px, var(--container-width));
+    margin: 0;
+    width: 100%;
   }
 }
 
