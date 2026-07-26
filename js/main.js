@@ -1076,6 +1076,11 @@
     }
 
     if (typeof window.fbq === "function" && analyticsConfig.metaPixelId) {
+      if (eventName === "form_submit") {
+        window.fbq("track", "Lead", payload || {});
+        return;
+      }
+
       window.fbq("trackCustom", eventName, payload || {});
     }
   }
